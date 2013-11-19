@@ -46,6 +46,7 @@ GEM
       rack (>= 1.0.0)
       rack-test (>= 0.5.4)
       xpath (~> 2.0)
+    cloudcontrol-rails (0.0.6)
     coderay (1.1.0)
     coffee-rails (3.2.2)
       coffee-script (>= 2.2.0)
@@ -88,6 +89,7 @@ GEM
     mysql2 (0.3.11)
     nokogiri (1.6.0)
       mini_portile (~> 0.5.0)
+    pg (0.17.0)
     polyglot (0.3.3)
     puma (2.6.0)
       rack (>= 1.1, < 2.0)
@@ -174,6 +176,7 @@ DEPENDENCIES
   bootstrap-sass (>= 3.0.0.0)
   bootstrap-will_paginate (~> 0.0.9)
   capybara
+  cloudcontrol-rails
   coffee-rails (~> 3.2.1)
   database_cleaner (= 1.0.1)
   email_spec
@@ -182,6 +185,7 @@ DEPENDENCIES
   hub
   jquery-rails
   mysql2
+  pg
   puma
   quiet_assets
   rails (= 3.2.15)

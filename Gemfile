@@ -28,6 +28,8 @@ group :development, :test do
 end
 group :production do
   gem 'puma'
+  gem "pg"
+  gem "cloudcontrol-rails"
 end
 group :test do
   gem 'capybara'
