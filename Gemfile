@@ -1,6 +1,5 @@
 source 'https://rubygems.org'
 gem 'rails', '3.2.15'
-gem 'sqlite3'
 gem 'mysql2'
 gem 'geocoder'
 gem 'will_paginate'
@@ -24,6 +23,7 @@ group :development do
   gem 'thin'
 end
 group :development, :test do
+  gem 'sqlite3'
   gem 'rspec-rails'
 end
 group :production do
