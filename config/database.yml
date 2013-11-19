@@ -22,8 +22,8 @@ production:
   adapter: postgresql
   encoding: utf8
   pool: 5
-  timeout:5000
-  
+  timeout: 5000
+
 proxied-appfog:
   adapter: mysql2
   database: d8dd6f795e5a64d8ea32538c77731a0d4
