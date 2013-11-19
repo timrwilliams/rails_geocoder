@@ -1,6 +1,5 @@
 source 'https://rubygems.org'
 gem 'rails', '3.2.15'
-gem 'mysql2'
 gem 'geocoder'
 gem 'will_paginate'
 gem "bootstrap-will_paginate", "~> 0.0.9"
