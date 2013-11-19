@@ -1,0 +1,27 @@
+<h1>Locations</h1>
+<table>
+<tr><td>Geocoded</td><td><%= @location_geocoded %></td></tr>
+<tr><td>Not Geocoded</td><td><%= @location_not_geocoded %></td></tr>
+</table>
+<div class="span8">
+<table class="table table-condensed">
+  <thead>
+    <tr>
+      <th>Post Code</th>
+      <th>Longitude</th>
+      <th>Latitude</th>
+      <th>Geocoded?</th>
+    </tr>
+  </thead>
+  <tbody>
+<% @locations.each do | location | %>
+	<tr>
+	<td><%= location.postcode %></td>
+	<td><%= location.longitude %></td>
+	<td><%= location.latitude %></td>
+	<td><%= location.geocoded? %></td>
+	</tr>
+<% end %>
+</tbody>
+</table>
+<%= will_paginate  @locations, :next_label => "<i class='icon-chevron-right'></i>", :previous_label => "<i class='icon-chevron-left'></i>"%>

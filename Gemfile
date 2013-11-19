@@ -2,6 +2,9 @@ source 'https://rubygems.org'
 ruby '1.9.3'
 gem 'rails', '3.2.15'
 gem 'sqlite3'
+gem 'geocoder'
+gem 'will_paginate'
+gem "bootstrap-will_paginate", "~> 0.0.9"
 group :assets do
   gem 'sass-rails',   '~> 3.2.3'
   gem 'coffee-rails', '~> 3.2.1'
@@ -18,6 +21,7 @@ group :development do
   gem 'hub', :require=>nil
   gem 'quiet_assets'
   gem 'rails_layout'
+  gem 'thin'
 end
 group :development, :test do
   gem 'rspec-rails'
